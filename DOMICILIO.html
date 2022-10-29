@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="LOGO.ico" href="LOGO.ico">
+    <title>ModernBooks</title>
+</head>
+<body>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150vh;
+            font-family: Arial, Arial, Helvetica, sans-serif;
+            background: linear-gradient(27deg, lightblue 50%, mediumpurple 50%);
+        }
+    </style>
+    <div class="send_form">
+        <div class="formulario">
+            <h1>MODERNBOOKS</h1>
+            
+            <form>
+                <p>
+                    <label for="nombre" class="colocar_nombre">
+                        Nombre
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_nombre" id="nombre" placeholder="Escribe tu nombre" required>
+                </p>
+
+                <p>
+                    <label for="telefone" class="colocar_telefono">
+                        Teléfono
+                    </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>
+
+                <p>
+                    <label for="libreria donde se encuentra" class="colocar_libreria donde se encuentra">
+                        Libreria donde se encuentra
+                    </label>
+                    <input type="text" name="introducir_libreria dondes se encuentra" id="libreria dondes se encuentra" placeholder="Escribe la libreria donde se encuentra">
+                </p>
+
+                <p>
+                    <label for="Nombre del libro" class="colocar_nombre del  libro">
+                        Nombre del libro
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_nombre del  libro" id="nombre del  libro" placeholder="Escribe el nombre del  libro" required>
+                </p>
+
+                <p>
+                    <label for="Dirección de envío" class="colocar_dirección del envío">
+                        Dirección de envío
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <textarea name="introducir_dirección de envío" class="texto_dirección del envío" id="dirección de envío" placeholder="Escribe tu dirección de envío" required></textarea>
+                </p>
+
+                <p>
+                    <label for="Fecha que desea la entrega" class="colocar_fecha que desea formulario entrega">
+                        Fecha que desea la entrega
+                    </label>
+                    <input type="text" name="introducir_fecha que desea la entrega" id="fecha que desea la entrega" placeholder="Fecha que desea la entrega">
+                </p>
+
+                <details>
+                    <summary>Formas de pago</summary>
+                    <ul>
+                        <li>TRANSACCIÓN TARJETA DE CRÉDITO O DÉBITO</li>
+                        <li>BITCOIN</li
+                    </ul>
+                </details>
+
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+            </form>
+        </div>
+    </div>
+
+    <style>
+        .send_form {
+            width: 440px;
+            height: 780px;
+            margin: 90px auto;
+            border-radius: 10px;
+            padding-top: 70px;
+            padding-bottom: 60px;
+            background-color: #fbfbfb;
+            padding-left: 30px;
+        }
+
+        input {
+            background-color: #fbfbfb;
+            width: 408px;
+            height: 20px;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightseagreen;
+            margin-top: 10px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            background-color: #fbfbfb;
+            width: 405px;
+            height: 150px;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightseagreen;
+            margin-top: 10px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+            padding-top: 15px;
+        }
+
+        label {
+            display: block;
+            float: left;
+        }
+
+        button {
+            height: 45px;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            text-transform: uppercase;
+            background-color: lightseagreen;
+            border-color: lightseagreen;
+            border-style: solid;
+            border-radius: 10px;
+            width: 400px;
+            cursor: pointer;
+        }
+
+        h1 {
+            color:deepskyblue;
+            text-align:center;
+            font-family: Elephant;
+        }
+
+        button p {
+            color: #fff;
+        }
+
+        span {
+            color: #ab4493;
+        }
+
+        p {
+            font-size: 14px;
+            color: #0e0e0e;
+        }
+
+        .formulario input:focus {
+            outline: 0;
+            border: 1px solid #ab4493;
+        }
+
+        .formulario textarea:focus {
+            outline: 0;
+            border: 1px solid #ab4493;
+        }
+    </style>
+</body>
+</html>

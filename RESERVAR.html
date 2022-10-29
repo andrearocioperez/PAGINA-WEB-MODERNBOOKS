@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="LOGO.ico" href="LOGO.ico">
+    <title>ModernBooks</title>
+</head>
+<body>
+    <div class="contact_form">
+        <div class="formulario">
+            <h1>ModernBooks</h1>
+            <h3>Reserva el libro de tu elección</h3>
+
+
+            <form action="ModernBooks.html">
+                <p>
+                    <label for="Cuenta de Correo Electrónico" class="colocar_correo electrónico">
+                        Cuenta de Correo Electrónico
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_correo electrónico" id="correo electrónico" placeholder="Escribe tu correo electrónico" required>
+                </p>
+                <p>
+                    <label for="Contraseña" class="colocar_contraseña">
+                        Contraseña
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_contraseña" id="contraseña" placeholder="Escribe tu contraseña" required>
+                </p>
+                <p>
+                    <label for="Nombre del libro" class="colocar_nombre del libro">
+                        Nombre del libro
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_nombre del libro" id="nombre del libro" placeholder="Escribe el nombre del libro" required>
+                </p>
+                <p>
+                    <br>
+                        LIBRERIA DONDE SE ENCUENTRA:
+                    <br>
+                    <select name="Lista_de_selección">
+                        <option value="opción1">Multiplaza en San Salvador</option>
+                        <option value="opción2">La Ceiba San Salvador</option>
+                        <option value="opción3">Amazon</option>
+                        <option value="opción4">ModernBooks La Libertad</option>
+                    </select>
+                </p>
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+            </form>
+        </div>
+    </div>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Elephant;
+            background: linear-gradient(27deg, lightblue 50%, mediumpurple 50%);
+        }
+
+        .contact_form {
+            width: 440px;
+            height: 550px;
+            margin: 90px auto;
+            border-radius: 10px;
+            padding-top: 70px;
+            padding-bottom: 60px;
+            background-color: #fbfbfb;
+            padding-left: 30px;
+        }
+
+        input {
+            background-color:whitesmoke;
+            width: 408px;
+            height: 20px;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            border-color:blueviolet;
+            margin-top: 10px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            background-color: #fbfbfb;
+            width: 405px;
+            height: 150px;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: blueviolet;
+            margin-top: 10px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+            padding-top: 15px;
+        }
+
+        label {
+            display: block;
+            float: left;
+        }
+
+        button {
+            height: 45px;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            text-transform: uppercase;
+            background-color:mediumslateblue;
+            border-color:lightblue;
+            border-style: solid;
+            border-radius: 10px;
+            width: 400px;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-size: 29px;
+            text-align: center;
+            padding-bottom: 20px;
+            color:crimson;
+        }
+
+        h3 {
+            font-size: 16px;
+            text-align: center;
+            padding-bottom: 20px;
+            color: #0e0e0e;
+        }
+
+            button p {
+                color: #fff;
+            }
+
+        span {
+            color: #ab4493;
+        }
+
+        p {
+            font-size: 14px;
+            color: #0e0e0e;
+        }
+
+        select {
+            background-color:thistle;
+        }
+
+        .formulario input:focus {
+            outline: 0;
+            border: 1px solid #ab4493;
+        }
+
+        .formulario textarea:focus {
+            outline: 0;
+            border: 1px solid #ab4493;
+        }
+    </style>
+</body>
+</html>

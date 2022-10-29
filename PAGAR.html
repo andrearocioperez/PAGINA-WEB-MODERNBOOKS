@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="LOGO.ico" href="LOGO.ico">
+    <title>ModernBooks</title>
+</head>
+<body>
+    <div class="contact_form">
+        <div class="formulario">
+            <h1>ModernBooks</h1>
+            <h3>Transacción en línea</h3>
+
+
+            <form action="ModernBooks.html">
+                <p>
+                    <label for="Cuenta de Correo Electrónico" class="colocar_correo electrónico">
+                        Cuenta de Correo Electrónico
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_correo electrónico" id="correo electrónico" placeholder="Escribe tu correo electrónico" required>
+                </p>
+                <p>
+                    <label for="Nombre" class="colocar_nombre">
+                        Nombre
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_nombre" id="nombre" placeholder="Escribe tu nombre" required>
+                </p>
+                <p>
+                    <label for="Teléfono" class="colocar_teléfono">
+                        Teléfono
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_teléfono" id="teléfono" placeholder="Escribe tu teléfono" required>
+                </p>
+                <p>
+                    <label for="Monto a pagar" class="colocar_monto a pagar ">
+                        Monto a pagar
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_monto a pagar" id="monto a pagar" placeholder="Escribe tu monto a pagar" required>
+                </p>
+                <p>
+                    <label for="DUI" class="colocar_DUI">
+                        DUI
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_DUI" id="DUI" placeholder="Escribe tu DUI" required>
+                </p>
+                <p>
+                    <label for="Nombre del libro" class="colocar_nombre del libro">
+                        Nombre del libro
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_nombre del libro" id="nombre del libro" placeholder="Escribe el nombre del libro" required>
+                </p>
+                <p>
+                    <br>
+                    LIBRERIA DONDE SE ENCUENTRA:
+                    <br>
+                    <select name="Lista_de_selección">
+                        <option value="opción1">Multiplaza en San Salvador</option>
+                        <option value="opción2">La Ceiba San Salvador</option>
+                        <option value="opción3">Amazon</option>
+                        <option value="opción4">ModernBooks La Libertad</option>
+                    </select>
+                </p>
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+            </form>
+        </div>
+    </div>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 140vh;
+            font-family: Arial, Arial, Helvetica, sans-serif;
+            background: linear-gradient(27deg, lightblue 50%, mediumpurple 50%);
+        }
+
+        .contact_form {
+            width: 440px;
+            height: 700px;
+            margin: 90px auto;
+            border-radius: 10px;
+            padding-top: 70px;
+            padding-bottom: 60px;
+            background-color: #fbfbfb;
+            padding-left: 30px;
+        }
+
+        input {
+            background-color:lavender;
+            width: 408px;
+            height: 20px;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            border-color:midnightblue;
+            margin-top: 10px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            background-color: #fbfbfb;
+            width: 405px;
+            height: 150px;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: blueviolet;
+            margin-top: 10px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+            padding-top: 15px;
+        }
+
+        label {
+            display: block;
+            float: left;
+        }
+
+        button {
+            height: 45px;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            text-transform: uppercase;
+            background-color: deepskyblue;
+            border-color:black;
+            border-style: solid;
+            border-radius: 10px;
+            width: 400px;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-size: 35px;
+            text-align: center;
+            padding-bottom: 4px;
+            color: indigo;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        h3 {
+            font-size: 16px;
+            text-align: center;
+            padding-bottom: 4px;
+            color: #0e0e0e;
+            border-color:aliceblue;
+            font-family:'Agency FB';
+        }
+
+        button p {
+            color: #fff;
+        }
+
+        span {
+            color: #ab4493;
+        }
+
+        p {
+            font-size: 14px;
+            color: #0e0e0e;
+        }
+
+        select {
+            background-color:whitesmoke;
+            border-block-color:aqua;
+        }
+
+        .formulario input:focus {
+            outline: 0;
+            border: 1px solid #ab4493;
+        }
+
+        .formulario textarea:focus {
+            outline: 0;
+            border: 1px solid #ab4493;
+        }
+    </style>
+</body>
+</html>

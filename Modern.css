@@ -1,0 +1,242 @@
+﻿body {
+    color: black;
+    background-color:aliceblue;
+}
+/*Logo ModernBooks*/
+div.logo {
+    color:white;
+    font-size:40px;
+    line-height:100px;
+    float:left;
+}
+/*Color de fondo del header */
+header {
+    background-color:lightseagreen;  
+}
+/*Estilo para personalizar contenido centrado aplicando este class*/
+.wrapper {
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    overflow:hidden;
+}
+/*Barra de menú 1*/
+nav li {
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    float:right;
+}
+
+nav a {
+    float:right;
+    margin-right: 0.12em;
+    padding:10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size:20px;
+    font-family: Elephant;
+}
+
+ nav a:hover {
+    color: indigo;
+}
+
+@media screep and  (max-width:950) {
+    header .logo,
+    header nav {
+        width:100%;
+        text-align:center;
+        line-height:100px;
+    }
+}
+/*Barra de menú 2*/
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;  
+    text-align:center;
+}
+
+    /* items del menu */
+    #menu ul li {
+        background-color: lightseagreen;
+        display:block;
+    }
+
+    /* enlaces del menu */
+    #menu ul a {
+        color: white;
+        text-decoration: none;
+        font-weight: 400;
+        font-size:18px;
+        padding:14px;
+        font-family: 'Times New Roman';
+        text-transform: none;
+        letter-spacing:1px;
+    }
+
+    /* items del menu */
+    #menu ul li {
+        position: relative;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+        /* efecto al pasar el ratón por los items del menu */
+        #menu ul li:hover {
+            background-color: indigo;
+        }
+
+
+/* barra de búsqueda de estilos */
+.search input {
+    width: 538px;
+    height:34px;
+    border-radius:30px;
+    border: none;
+    font-family:'Times New Roman';
+    font-size:15px;
+    text-align:center;  
+}
+/*Barra de búsqueda */
+.search {
+    float:left;
+    height:49px;
+    width:600px;
+    background-color: lightseagreen;
+    text-align:center;
+}
+
+/* Estilo cada uno de los lados con un ancho y alto fijos */
+.slide {
+    float: left;
+    height: 510px;
+    width: 1300px;
+}
+
+/* Agregar animación a las diapositivas */
+.slide-wrapper {
+    /* Calcular el ancho total en el Base del número de diapositivas */
+    width: calc(1300px * 4);
+    /* Especifique la animación con el botón Duración y velocidad */
+    animation: slide 20s ease infinite;
+    position: absolute;
+}
+
+/* Establecer la altura y ancho de cada una de las diapositivas */
+.slide:nth-child(1) img {
+    width: 1300px;
+    height: 510px;
+}
+
+.slide:nth-child(2) img {
+    width: 1300px;
+    height: 510px;
+}
+
+.slide:nth-child(3) img {
+    width: 1300px;
+    height: 510px;
+}
+
+.slide:nth-child(4) img {
+    width: 1300px;
+    height: 510px;
+}
+
+/* Definir la animación para la presentación de diapositivas */
+@keyframes slide {
+    /* Calcular el margen restante para Cada una de las diapositivas */
+    20% {
+        margin-left: 0px;
+    }
+
+    40% {
+        margin-left: calc(-1300px * 1);
+    }
+
+    60% {
+        margin-left: calc(-1300px * 2);
+    }
+
+    80% {
+        margin-left: calc(-1300px * 3);
+    }
+}
+
+/*Presentacion de  Parrafo */
+.parrafo {
+    font-family: Verdana;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+/*Libros en Fisico*/
+.titulo {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    text-align: center;
+}
+
+/*Galeria libros wattpad*/
+.galeria img {
+    box-shadow: 0 8px 10px -4px;
+    border-radius: 3px;
+    margin-right: 10px;
+    padding:5px;
+    transition: .2s ease-in-out;
+    float:left;
+}
+
+    .galeria img:hover {
+        transform: scale(1.10);
+        transition: .2s ease-in-out;
+    }
+/*Pie de pagina*/
+.footer-basic {
+    padding: 20px 0;
+    background-color: lightseagreen;
+    color: #4b4c4d;
+}
+
+    .footer-basic ul {
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+
+    .footer-basic li {
+        padding: 0 10px;
+        display: inline-block;
+        font-family: 'Times New Roman', Times, serif;
+        text-align:center;
+    }
+
+    .footer-basic ul a {
+        color:white;
+        text-decoration: none;
+    }
+
+        .footer-basic ul a:hover {
+            color:indigo;
+        }
+
+    .footer-basic .copyright {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 15px;
+        color: black;
+        margin-bottom: 0;
+    }
+
+    .footer-basic .autora {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 20px;
+        color: black;
+        margin-bottom: 0;
+    }

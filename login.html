@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="LOGO.ico" href="LOGO.ico">
+    <title>ModernBooks</title>
+</head>
+<body>
+    <class ="form-body">
+        <img src="Logo1.png" alt="user-login" width="269" height="249" />
+        <p class="text"> Bienvenido a Modern Books</p>
+        <form class="login-form">
+            <input type="text" placeholder="Email o nombre de usuario" />
+            <input type="password" placeholder="contrseña" />
+            <a href="ModernBooks.html" <button>Iniciar</button></a>
+        </form>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                font-family: Arial, Arial, Helvetica, sans-serif;
+                background: linear-gradient(27deg, lightseagreen 50%, indigo 50%);
+            }
+
+            .form-body {
+                width: 400 px;
+                min-width: 300px;
+                border-radius: 10px;
+                border-top-left-radius: 50px;
+                border-buttom-right-radius: 50px;
+                margin: 10px;
+            }
+
+                .form-body img {
+                    width: 150px;
+                    display: block;
+                    margin: 20px 0;
+                }
+
+            .text {
+                text-align: center;
+                font-size: 1.5 rem;
+                font-weight: 600;
+                color: white;
+            }
+
+            .form-body input {
+                display: block;
+                margin: auto;
+                height: 40px;
+                width: 75%;
+                padding-left: 10px;
+                color: #fff;
+                border: 1px solid #fff;
+                border-radius: 2px;
+                font-family: Verdana, Geneva. Tahoma, sans-serif;
+                background-color: transparent;
+                border-top-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                font-size: 1rem;
+                outline: none;
+            }
+
+                .form-body input[type="password"] {
+                    margin-top: 20px;
+                }
+
+            ::placeholder {
+                font-size: 1rem;
+                color: rgba(255,255,255, .596);
+            }
+
+            .form-body input:hover {
+                transition: .5s;
+                border: 1px solid #2980b9;
+                color: #2498db;
+            }
+
+            .form-body button {
+                display:;
+                margin: auto;
+                margin-top: 25px;
+                margin-bottom: 30px;
+                height: 40px;
+                width: 78%;
+                background: transparent;
+                color: #b9c4c6;
+                border-radius: 2px;
+                cursor: pointer;
+                outline: none;
+                transition: all .5s ease;
+            }
+
+                .form-body button:hover {
+                    color: #d5dbdd;
+                    border: 2px solid #3498db;
+                    background: linear-gradient(#34495e,##2c3e50);
+                }
+        </style>
+</body>
+</html>
